@@ -1,0 +1,58 @@
+
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+
+public class InsertContent {
+	private static final String fileNmae = null;
+
+	public static void insert(String fileName, long pos, String insertContent) throws IOException
+	{
+		File tmp = File.createTempFile("tmp", null);
+		tmp.deleteOnExit();
+		try(
+			RandomAccessFile raf = new RandomAccessFile(fileNmae, "rw");
+			FileOutputStream tmpOut = new FileOutputStream(tmp);
+			FileInputStream tmpIn = new FileInputStream(tmp))
+		{
+			raf.seek(pos);
+			byte[] bbuf = new byte[64];
+			int hasRead = 0;
+			while((hasRead = raf.read(bbuf)) > 0){
+				tmpOut.write(bbuf, 0, hasRead);
+			}
+			raf.seek(pos);
+			raf.write(insertContent.getBytes());
+			while((hasRead = tmpIn.read(bbuf)) > 0){
+				raf.write(bbuf, 0, hasRead);
+			}
+		}
+	}
+	public static void  main(String[] args) throws IOException{
+		try(
+			RandomAccessFile raf1 = new RandomAccessFile("out.txt", "rw"))
+		{
+		insert("out.txt", 45, "≤Â»Îµƒƒ⁄»›");
+		}
+		catch(IOException ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
