@@ -5,6 +5,7 @@ char  T[N] = { '\0','a','b','c','a','b','d' };
 #define length 6
 void get_next(char T[], int * next)
 {
+
 	int i;
 	i = 1;
 	int j = 0;
