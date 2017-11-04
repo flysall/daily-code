@@ -11,7 +11,7 @@
     <packaging>war</packaging>
     <name>Spring Boot Tomcat JSP Sample</name>
     <description>Spring Boot Tomcat JSP Sample</description>
-    <properties>
+    <properties>   
         <main.basedir>${basedir}/../..</main.basedir>
         <m2eclipse.wtp.contextBoot>/</m2eclipse.wtp.contextBoot>
     </properties>
@@ -19,7 +19,19 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
