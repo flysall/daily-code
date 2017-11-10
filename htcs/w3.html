@@ -1,16 +1,17 @@
 <html>
     <head>
         <style type="text/css">
-            h1 {text-transform: uppercase; }
-            p.uppercase {text-transform: uppercase; }
-            p.lowercase {text-transform: lowercase; }
-            p.capitalize {text-transform: capitalize}
+            input:focus{
+                background-color: yellow;
+            }
         </style>
     </head>
+
     <body>
-        <h1>This is An h1 Element</h1>
-        <p class="uppercase">This is some text in a paragraph.</p>
-        <p class="loswercase">this si some texxt in  a paragraph.</p>
-        <p class="capitalize">This is some text in a paragraph.</p>
+        <form action="http://www.w3school.com.cn/form_action.asp" method="get">
+            First name: <input type="text" name="fname" /><br/>
+            Last name: <input type="text" name="lname" /><br/>
+            <input type="submit" value="Submit" />
+        </form>
     </body>
 </html>
