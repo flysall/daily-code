@@ -1,1 +1,0 @@
-It's a web project in java. It's from [fanchaoo/hahu](https://github.com/fanchaoo/hahu)
