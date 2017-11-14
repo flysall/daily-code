@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from collections import deque
 from math import pi
 print('===As Stack===')
