@@ -1,0 +1,5 @@
+sample/security/method/SampleMethodSecurityApplication$HomeController.class
+sample/security/method/SampleMethodSecurityApplication.class
+sample/security/method/SampleMethodSecurityApplication$AuthenticationSecurity.class
+sample/security/method/SampleMethodSecurityApplication$ApplicationSecurity.class
+sample/security/method/SampleMethodSecurityApplication$ActuatorSecurity.class
