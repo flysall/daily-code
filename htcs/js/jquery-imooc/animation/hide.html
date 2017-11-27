@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="content/html; charset=utf-8"/>
+    <title>hide</title>
+    <style>
+        .button-block{
+            width:800px;
+            height: 30px;
+            border: 10px solid #ccc;
+            margin-top: 100px;
+            background: red;
+
+        }
+
+        .hide-button{
+            background-color: blanchedalmond;
+            float: left;
+            height: 30px;
+        }
+
+        .left div,
+        .right div{
+            width: 500px;
+            height: 50px;
+            padding: 5px;
+            float: left;
+            border: 1px solid #ccc;
+        }
+
+        .left div{
+            background: #bbffaa;
+        }
+
+        .right div{
+            background: yellow;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+    <h2>hide</h2>
+    <div class="left">
+        <div id="a1">hide操作</div>
+        <div id="a2">hide动画操作</div>
+    </div>
+    <div class="button-block">
+        <div>
+            <button class="hide-button">直接hide</button>
+        </div>
+        <div>
+            <button class="hide-button">hide带动画</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+    
+    //点击button1, 隐藏
+    $("button:first").click(function(){
+        $("#a1").hide()
+    });
+
+    //点击buttton2  动画
+    $("button:last").click(function(){
+        $("#a2").hide({
+            duration:3000,
+            complete:function(){
+                alert("执行3000ms动画完毕")
+            }
+        })
+    });
+
+    </script>
+</body>
+</html>

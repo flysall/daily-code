@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title></title>
+        <style>
+            div{
+                width: 60px;
+                height: 60px;
+                margin: 5px;
+                float: left;
+                font-size: 0.8em;
+                background: #40E0D0;
+            }
+            .first{
+                background-color: lightSkyblue;
+            }
+            .second{
+                background-color: #ccc;
+                color: red;
+                font-size: 1.2em;
+            }
+            .third{
+                background-color:yellow;
+            }
+            .six{
+                font-size: 12px;
+            }
+        </style>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    </head>
+
+    <body>
+        <h3>get css attr</h3>
+        <div class="first">get color</div>
+        <p></p>
+        <div class="second">get font size</div>
+        <p></p>
+        <div class="third">get size</div>
+        <p></p>
+
+        <script type="text/javascript"/>
+        $('p:eq(1)').text($('.first').css("font-size"));
+    </body>
+</html>

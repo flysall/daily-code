@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/javascript; charset=utf-8"/>
+        <title></title>
+        <style>
+            input{
+                display: block;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                background: #bbffaa;
+            }
+        </style>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    </head>
+    <body>
+        <h2>.attr() and removeAttr()</h2>
+        <h3>.attr()</h3>
+        <form>
+            <input type="text" value="" />
+            <input type="text" value="get value"/>
+            <input type="text" value="get thid input" />
+            <input type="text" value="remove value"/>
+        </form>
+        
+        <script type="text/javascript">
+            $("input:first").attr('value', 'attr(attributeName, value)');
+
+            $("input:eq(1)").attr('value');
+
+            $("input:eq(2)").attr('value', function(i, val){
+                return " function " + val;
+            });
+
+            $("input:eq(3)").removeAttr('value');
+        </script>
+    </body>
+</html>

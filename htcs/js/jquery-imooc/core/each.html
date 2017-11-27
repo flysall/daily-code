@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Conent-type" content="text/html; charset=utf-8"/>
+        <title></title>
+        <style>
+            p{
+                color: red;
+            }
+            div{
+                width: 200px;
+                height: 100px;
+                background-color: yellow;
+                color: red;
+            }
+        </style>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    </head>
+
+    <body>
+        <h2>each</h2>
+        <p>imooc</p>
+        <div id="aaron"></div>
+        点击观察结果:
+        <select id="animation">
+            <option value="1">each array</option>
+            <option value="2">each object</option>
+        </select>
+        <input id="exec" type="button" value="执行动画">
+        <script type="text/javascript">
+            $("#exec").click(function(){
+                var v = $("#animation").val();
+                var $aaron = $("#aaron");
+                $aaron.empty();
+                if(v == "1"){
+                    $.each(['Aaron', 'mooc'], function(i, item){
+                        $aaron.append("index=" + i + ";<br/>" + "element=" + item + ";<br/>");
+                    });
+                } else if(v == "2"){
+                   $.each({
+                       name: "flysall",
+                       age: 18
+                   }, function(property, value){
+                       $aaron.append("attr_name=" + property + ";<br/>" + "attr_val=" + value + ";<br/>");
+                   });
+                }
+            });
+        </script>
+    </body>
+</html>
