@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    font-family: "Dosis";
+    background: #778899;
+}
+
+.grid-container{
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+}
+
+.grid-element-header{
+    background: red;   
+    position: relative;
+    top: -10px;
+}
+
+.grid-element-sidebar{
+    background: green;
+    position: relative;
+    top: 0px;
+    width : 50px;
+    height: 500px;
+    
+}
+
+.grid-element-main{
+    background: burlywood;
+    position: relative;
+    top: -500px;
+    left: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 500px;
+}

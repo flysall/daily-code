@@ -1,0 +1,29 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <style>
+            
+        </style>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    </head>
+
+    <body>
+        <h3>.val()</h3>
+        <select id="single">
+            <option>慕课网</option>
+            <option>博客园</option>
+        </select>
+        <select id="multiple" multiple="multiple">
+            <option selected="selected">imooc</option>
+            <option>慕课网</option>
+            <option selcted="selected">博客园</option>
+        </select>
+        <input type="text" value="click a button"/>
+        <p></p>
+        
+        <script type="text/javascript">
+            $("p").text($("#multiple").val());
+        </script>
+    </body>
+</html>>

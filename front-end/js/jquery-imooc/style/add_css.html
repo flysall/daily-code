@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title></title>
+        <style>
+            .left,
+            .right{
+                width: 300px;
+                height: 120px;
+            }
+
+            .left div,
+            .right div{
+                width: 200px;
+                height: 90px;
+                padding: 5px;
+                margin: 5px;
+                float: left;
+            }
+            a{
+                font-size: 14px;
+                display: block;
+            }
+            .newClass{
+                background: #bbffaa;
+            }
+            .imoocClass{
+                background: red;
+            }
+            .addBorder{
+                border: 1px solid red;
+            }
+        </style>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    </head>
+
+    <body>
+        <h2>difference of .addClass and .css</h2>
+        <div class="left">
+            <div class="aaron">
+                <a>css优先级高于addClass</a>
+                <a>1: 第一次addClass背景色</a>
+                <a>2: 第二次css修改背景色</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="aa bb imooc">
+                <article>
+                    <a>imoocClass</a>
+                </article>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $('div').addClass('addBorder');
+
+            $('.aaron').addClass('newClass');
+
+            $('.aaron').css({
+                'background': 'yellow'
+            });
+        </script>
+    </body>
+</html>
