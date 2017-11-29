@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <style>
+    .aaron{
+        border: 1px solid red;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>通过before与after添加元素</h2>
+    <button id="bt1">点击通过jQuery的before添加元素</button>
+    <button id="bt2">点击通过jQuery的after添加元素</button>
+    <div class="aaron">
+        <p class="test1">测试before</p>
+    </div>
+    <div class="aaron">
+        <p class="test2">测试after</p>
+    </div>
+
+    <script type="text/javascript">
+        $("#bt1").on('click', function(){
+            $(".test1").before('<p style="color: red">before, 匹配元素之前增加</div>');            
+        })
+        
+        $("#bt2").on('click', function(){
+            $(".test2").after('<p style="color: blue">after, 在匹配的元素之后增加</p>');
+        })
+    </script>
+
+</body>

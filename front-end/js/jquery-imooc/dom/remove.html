@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        p {
+            border: 1px solid red;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+    <h3>给页面2个p元素节点绑定点击事件,点击后弹出自己本身的节点内容</h3>
+    <p>元素p1，同时绑定点击事件</p>
+    <p>元素p2，同时绑定点击事件</p>
+    <h3>通过点击2个按钮后观察方法处理的区别</h3>
+    <button>点击通过remove处理元素p1</button>
+    <button>点击通过detach处理元素p2</button>
+</body>
+    <script type="text/javascript">
+        $('p').click(function(e){
+            alert(e.target.innerHTML)
+        })
+
+        $('button:first').click(function(){
+            var p = $("p:first").remove();
+            p.css('color', 'red').text('remove导致事件丢失');
+            $('body').append(p);
+        });
+
+       $('button:last').click(function(){
+            var p = $("p:first").detach();
+            p.css('color', 'blue').text('detach该元素的事件仍然存在');
+            $('body').append(p);
+        })
+    </script>
+</html>

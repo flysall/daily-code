@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <style>
+    .right div {
+        background: yellow;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>replaceWith()和replaceAll()</h2>
+    <div class="left">
+        <button class="bt1">点击,通过replaceWith替换内容</button>
+        <button class="bt2">点击,通过replaceAll替换内容</button>
+    </div>
+    <div class="right">
+        <div>
+            <p>第一段</p>
+            <p>第二段</p>
+            <p>第三段</p>
+        </div>
+        <div>
+            <p>第四段</p>
+            <p>第五段</p>
+            <p>第六段</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".bt1").on('click', function(){
+            $(".right > div:first p:eq(1)").replaceWith('<a style="color:red">replaceWith替换第二段内容</a>');
+        });
+
+        $(".bt2").on('click', function(){
+            $('<a style="color:red">replaceAll替换第六段内容</a>').replaceAll('.right > div:last p:last');
+        })
+    </script>
+</body>
+
+</html>

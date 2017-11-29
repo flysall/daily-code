@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <style>
+        .left,
+        .right {
+            width: 300px;
+            height: 120px;
+        }
+
+        .left div,
+        .right div {
+            width: 100px;
+            height: 90px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            border: 1px solid #ccc;
+        }
+
+        .left div {
+            background: #bbffaa;
+        }
+
+        .right div {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>动态创建元素节点</h2>
+    <button>点击通过jQuery动态创建元素节点</button>
+    <script type="text/javascript">
+        var $body = $('body')
+        $body.on('click', function () {
+            var div = $("<div class='right'><div class='aaron'>动态创建DIV元素</div></div>");
+            $body.append(div);
+        })
+    </script>
+</body>
+
+</html>
