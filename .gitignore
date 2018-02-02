@@ -3,3 +3,6 @@ Java/EE/*
 Java-SE
 */target/*
 /target/
+/OJ/
+/out/
+/ThinkingInJava/out/
