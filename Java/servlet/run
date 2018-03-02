@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Complie the java source code..."
+javac -classpath  ~/d/tmp/Java/*.jar *.java
+echo "Complie is done!"
+echo "Move the class to the tomcat..."
+mv *.class /usr/local/tomcat/webapps/ROOT/WEB-INF/classes
+echo "Move is done!"
+echo "Copy the htm files to tomcat..."
+cp *.htm /usr/local/tomcat/webapps/ROOT
+echo "Copy is done!"
+
+tail -f /usr/local/tomcat/logs/catalina.out
