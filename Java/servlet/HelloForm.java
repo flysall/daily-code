@@ -4,10 +4,19 @@ import javax.servlet.http.*;
 
 public class HelloForm extends HttpServlet{
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        Cookie firstName = new Cookie("first_name", request.getParameter("first_name"));
+        Cookie lastName = new Cookie("last_name", request.getParameter("last_name"));
+
+        firstName.setMaxAge(60 * 60 * 24);
+        lastName.setMaxAge(60 * 60 * 24);
+       
+        response.addCookie(firstName);
+        response.addCookie(lastName);
+
         response.setContentType("text/html");
         
         PrintWriter out = response.getWriter();
-        String title= "Using GET Method to Read From Data";
+        String title= "Setting Cookies Example";
         String docType =
                      "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
         out.println(docType + 
