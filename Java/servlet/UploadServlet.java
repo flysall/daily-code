@@ -9,20 +9,24 @@ import org.apache.commons.fileupload.disk.*;
 import org.apache.commons.fileupload.servlet.*;
 import org.apache.commons.io.output.*;
 
+import org.apache.logging.log4j.*;
+
 public class UploadServlet extends HttpServlet {
     private boolean isMultipart;
     private String filePath;
     private int maxFileSize = 1024 * 1024;
     private int maxMemSize = 1024 * 1024;
     private File file;
+    private Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     public void init() {
+        logger.info("You init a servlet name UploadServlet");
         filePath = getServletContext().getInitParameter("file-upload");
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
-        System.out.println("Debugging in UploadServlet.doPpost()=============================================");
+        logger.info("UploadServlet.doPost()=============================================================================");
         isMultipart = ServletFileUpload.isMultipartContent(request);
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -64,15 +68,16 @@ public class UploadServlet extends HttpServlet {
                     long sizeInBytes = fi.getSize();
 
                     // Display in tomcat:
-                    System.out.println("fileName is: " + fileName + "\nfieldName is: " + fieldName);
-                    System.out.println("current filePath is: " + filePath);
+                    logger.info("fileName is: " + fileName + "\nfieldName is: " + fieldName);
+                    logger.info("current filePath is: " + filePath);
+                    
 
                     if(fileName.lastIndexOf("/") >= 0) {
                         filePath = filePath + fileName.substring(fileName.lastIndexOf("/"));
                     } else {
                         filePath = filePath + fileName.substring(fileName.lastIndexOf("/") + 1);
                     }
-                    System.out.println("final filePath is: " + filePath);
+                    logger.info("final filePath is: " + filePath);
                     file = new File(filePath);
                     fi.write(file);
                     out.println("Uploaded FileName: " + fileName + "<br>");
@@ -82,7 +87,7 @@ public class UploadServlet extends HttpServlet {
         } catch(Exception ex) {
             System.out.println(ex);
         }
-        System.out.println("=============================================");
+        logger.info("=============================================================================================");
     }
 
     public void  doGet(HttpServletRequest request, HttpServletResponse response) 
