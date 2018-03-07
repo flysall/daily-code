@@ -1,19 +1,24 @@
 #include<stdio.h>
 #include <stdlib.h>
+
 #define N 8
 #define MAXSIZE 20 /* 一个用作示例的小顺序表的最大长度 */
+
 typedef int KeyType; /* 定义关键字类型为整型 */
 typedef int InfoType;
+
 typedef struct
 {
 	KeyType key; /* 关键字项 */
 	InfoType otherinfo; /* 其它数据项，具体类型在主程中定义 */
 }RedType; /* 记录类型 */
+
 typedef struct
 {
 	RedType r[MAXSIZE + 1]; /* r[0]闲置或用作哨兵单元 */
 	int length; /* 顺序表长度 */
 }SqList; /* 顺序表类型 */
+
 int Partition(SqList *L, int low, int high)
 {
 	RedType t;
@@ -34,7 +39,8 @@ int Partition(SqList *L, int low, int high)
 	}
 	return low;
 }
-void QSort(SqList * L, int low, int high)
+
+void QSort(SqList* L, int low, int high)
 {
 	int pivotloc;
 	if (low < high)
@@ -44,10 +50,12 @@ void QSort(SqList * L, int low, int high)
 		QSort(L, pivotloc + 1, high);
 	}
 }
-void QuickSort(SqList * L)
+
+void QuickSort(SqList* L)
 {
 	QSort(L, 1, L->length);
 }
+
 void print(SqList L)
 {
 	int i;

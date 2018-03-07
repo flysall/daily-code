@@ -1,8 +1,6 @@
-Java/EE/springboot-demo/spring-boot/
-Java/EE/*
 Java-SE
-*/target/*
-/target/
-/OJ/
-/out/
-/ThinkingInJava/out/
+Java/EE/
+OJ/
+文档/
+bash/
+
