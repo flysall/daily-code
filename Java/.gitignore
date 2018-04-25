@@ -1,6 +1,8 @@
 JVM/
 json/
 
+# Compiled class by maven
+target/
 
 # Compiled class file
 *.class

@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS msg_per_hr (
+    hr DATETIME NOT NULL,
+    cnt INT UNSIGNED NOT NULL,
+    PRIMARY KEY(hr)
+);
+
+SELECT SUM(cnt) FROM msg_per_hr
+WHERE hr BETWEEN
+    CONCAT(LEFT(NOW(), 14), '00:00') - INTERVAL 23 HOUR
+    AND CONCAT(LEFT(NOW(), 14), '00:00') - INTERVAL 1 HOUR;
+    
+SELECT COUNT(*) FROM message
+WHERE posted >= NOW() - INTERVAL 24 HOUR
+    AND posted < CONCAT(LEFT(NOW(), 14), '00:00');
+
+SELECT COUNT(*) FROM message
+WHERE posted >= CONCAT(LEFT(NOW()), 14), '00:00');

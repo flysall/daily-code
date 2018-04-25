@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS acl
+(
+    perms SET('CAN_READ', 'CAN_WRITE', 'CAN_DELETE') NOT NULL
+);
+
+INSERT INTO acl(perms) VALUES
+(
+    'CAN_READ'
+);
+
+SELECT perms FROM acl WHERE FIND_IN_SET('CAN_READ', perms);
+
