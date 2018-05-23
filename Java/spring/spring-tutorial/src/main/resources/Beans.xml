@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.flysall.springtutorial.core"/>
+
+    <bean id="helloWorld" class="com.flysall.springtutorial.core.HelloWorld" scope="prototype" lazy-init="true">
+        <property name="message" value="Hello World"/>
+    </bean>
+
+    <bean id="beanLifeDemo" class="com.flysall.springtutorial.core.BeanLifeDemo"
+          init-method="init" destroy-method="destroy" lazy-init="true">
+        <property name="message" value="BeanLifeDemo"/>
+    </bean>
+
+    <!--
+    <bean class="com.flysall.springtutorial.core.BeanPostProcessorDemo" lazy-init="true"/>
+    -->
+
+    <bean id="parentBeanDemo" class="com.flysall.springtutorial.core.ParentBeanDemo" lazy-init="true">
+        <property name="message1" value="ParentBeanDemo.message1"/>
+        <property name="message2" value="ParentBeanDemo.messaage2"/>
+    </bean>
+
+    <bean id="childBeanDemo" class="com.flysall.springtutorial.core.ChildBeanDemo" parent="parentBeanDemo">
+        <property name="message1" value="ChildBeanDemo.messae1"/>
+        <property name="message3" value="ChildBeanDemo.message3"/>
+    </bean>
+
+    <!--
+    <bean id="textEditor" class="com.flysall.springtutorial.core.TextEditor" lazy-init="true">
+        <property name="spellChecker">
+            <bean id="spellChecker" class="com.flysall.springtutorial.core.SpellChecker" lazy-init="true"/>
+        </property>
+    </bean>
+    -->
+
+    <bean id="collectionDemo" class="com.flysall.springtutorial.core.CollectionDemo" lazy-init="true">
+        <property name="addressList">
+            <list>
+                <value>INDIA</value>
+                <value>Pakistan</value>
+                <value>USA</value>
+                <value>USA</value>
+            </list>
+        </property>
+
+        <property name="addressSet">
+            <set>
+                <value>INDIA</value>
+                <value>Pakistan</value>
+                <value>USA</value>
+                <value>USA</value>
+            </set>
+        </property>
+        <property name="addressMap">
+            <map>
+                <entry key="1" value="INDIA"/>
+                <entry key="2" value="Pakistan"/>
+                <entry key="3" value="USA"/>
+                <entry key="4" value="USA"/>
+            </map>
+        </property>
+
+
+        <property name="addressProp">
+            <props>
+                <prop key="one">INDIA</prop>
+                <prop key="one">INDIA</prop>
+                <prop key="two">Pakistan</prop>
+                <prop key="three">USA</prop>
+                <prop key="four">USA</prop>
+            </props>
+        </property>
+    </bean>
+    <!--
+    <bean id="configInjectDemo" class="com.flysall.springtutorial.core.ConfigInjectDemo"/>
+    -->
+
+    <bean id="customEventHandler" class="com.flysall.springtutorial.core.CustomEventHandler" lazy-init="true"/>
+    <bean id="customEventPublisher" class="com.flysall.springtutorial.core.CustomEventPublisher" lazy-init="true"/>
+
+    <bean class="com.flysall.springtutorial.core.UserEventsProcessor"/>
+</beans>
