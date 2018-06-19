@@ -154,7 +154,7 @@ type StringWriter interface {
 
 // WriteString writes the contents of the string s to w, which accepts a slice of bytes.
 func WriteString(w Writer, s string) (n int, err error) {
-    // 将Writer转型为StringWriter
+    // 类型断言
     if sw, ok := w.(StringWriter); ok {
         return sw.WriteString(s)
     }
@@ -313,6 +313,7 @@ func NewSectionReader(r ReaderAt, off int64, n int64) *SectionReader {
 // SectionReader implements Read, Seek, and ReadAt on a section of an
 // underlying ReadAt.
 type SectionReader struct {
+    // 全为小写，为该包私有
     r ReaderAt
     base int64  // 起始位置
     off int64   // 相对起始位置的偏移
