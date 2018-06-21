@@ -62,7 +62,7 @@ type ReadWriter interface {
 }
 
 // ReadCloser is the interface the groups the basic Read and Close methos.
-type ReadClose interface {
+type ReadCloser interface {
     Reader
     Closer
 }

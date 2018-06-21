@@ -5,6 +5,8 @@ import (
 	"bytes"
 	"os"
 	"sort"
+	"io"
+	"sync"
 )
 
 // readAll reads from r until an error or EOF and returns the dta it read
@@ -71,20 +73,6 @@ func WriteFile(filename string, data []byte, perm os.FileMode) error {
 	return err
 }
 
-// byName implements sort.Interface.
-type byName []os.FileInfo
-
-func (f byName) Len() int {
-	return len(f)
-}
-
-func (f byName) Less(i, j int) bool {
-	return f[i].Name() < f[j].Name()
-}
-
-func (f byName) Swap(i, j int) {
-	f[i], f[j] = f[j], f[i]
-}
 
 // ReadDir reads directory named by dirname and returns a list of
 // directory entries sorted by fillename.
@@ -97,6 +85,63 @@ func ReadDir(dirname string) ([]os.FileInfo, error) {
 	if err != nil {
 		return nil, err
 	}
-	sort.Sort(byName(list))
+	sort.Slice(list, func(i, j int) bool {
+		return list[i].Name() < list[j].Name()
+	})
 	return list, nil
 }
+
+type nopCloser struct {
+	reio.Reader
+}
+
+func (nopCloser) Close() error {
+	return nil
+}
+
+// NopCloser returns a ReadCloser with a no-op Close method wrapping
+// the provided Reader r.
+func NopCloser(r reio.Reader) reio.ReadCloser {
+	return nopCloser{r}
+}
+
+type devNull int
+
+var _ io.ReaderFrom = devNull(0)
+
+func (devNull) Write(p []byte) (int, error) {
+	return len(p), nil
+}
+
+func (devNull) WriteString(s string) (int, error) {
+	return len(s), nil
+}
+
+var blackHolePool = sync.Pool {
+	New: func() interface{} {
+		// TODO 解释一下8192？
+		b := make([]byte, 8192)
+		return &b
+	},
+}
+
+
+func (devNull) ReadFrom(r io.Reader) (n int64, err error) {
+	bufp := blackHolePool.Get().(*[]byte)
+	readSize := 0
+	for {
+		readSize, err = r.Read(*bufp)
+		n += int64(readSize)
+		if err != nil {
+			blackHolePool.Put(bufp)
+			if err == io.EOF {
+				return n, nil
+			}
+			return
+		}
+	}
+}
+
+// Discard is an io.Writer on which all Write calls succeed
+// without doing anything.
+var Discard io.Writer = devNull(0)
