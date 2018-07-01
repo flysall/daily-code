@@ -5,6 +5,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"regexp"
 )
 
 func TestTempFile(t *testing.T) {
@@ -43,4 +44,36 @@ func TestTempFile_pattern(t *testing.T) {
 	}
 }
 
+func TestTempDir(t *testing.T) {
+	name, err := TempDir("/_not_exists_", "foo")
+	if name != "" || err != nil {
+		t.Errorf("TempDir('/_not_exists_`, `foo`) = %v, %v", name, err)
+	}
 
+	dir := os.TempDir()
+	name, err = TempDir(dir, "reioutil_test")
+	if name == "" || err != nil {
+		t.Errorf("TempDir(dir, `reioutil_test``) = %v, %v", name, err)
+	}
+
+	if name != "" {
+		os.Remove(name)
+		re := regexp.MustCompile("^" + regexp.QuoteMeta(filepath.Join(dir, "reioutil_test")) + "[0-9]+$")
+		if !re.MatchString(name) {
+			t.Errorf("TempDir(`" + dir + "`, `reioutil_test` created bad name %s", name)
+		}
+	}
+}
+
+func TestTempDir_BadDir(t *testing.T) {
+	dir, err := TempDir("", "TestTempDir_BadDir")
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer os.RemoveAll(dir)
+	badDir := filepath.Join(dir, "not-exist")
+	_, err = TempDir(badDir, "foo")
+	if pe, ok := err.(*os.PathError); !ok || !os.IsNotExist(err) || pe.Path != 	badDir {
+		t.Errorf("TempDir error = %#v; want pathError for path %q satisfiying os.IsNotExist", err, badDir)
+	}
+}
