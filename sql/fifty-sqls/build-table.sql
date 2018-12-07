@@ -45,7 +45,7 @@ INSERT INTO student VALUES('07' , '郑竹' , '1989-07-01' , '女');
 INSERT INTO student VALUES('08' , '王菊' , '1990-01-20' , '女');
 
 -- 课程表测试数据
-INSERT INTO course VALUES('01','语文', '92');
+INSERT INTO course VALUES('01','语文', '02');
 insert into course values('02' , '数学' , '01');
 insert into course values('03' , '英语' , '03');
 

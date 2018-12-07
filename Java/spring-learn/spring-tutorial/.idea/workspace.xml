@@ -91,10 +91,9 @@
       <file leaf-file-name="EmployeeEvent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="330">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
-                <element signature="e#483#484#0" expanded="true" />
                 <element signature="e#515#516#0" expanded="true" />
                 <element signature="e#555#556#0" expanded="true" />
                 <element signature="e#586#587#0" expanded="true" />
@@ -103,42 +102,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-              <folding>
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EmployeeManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="132">
               <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,14 +123,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="66">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#73#102#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,7 +138,7 @@
       <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="176">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -178,34 +147,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserEventsProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/UserEventsProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeDAOImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="308">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -641,86 +590,10 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flysall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flysall" type="462c0819:PsiDirectoryNode" />
-              <item name="springtutorial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flysall" type="462c0819:PsiDirectoryNode" />
-              <item name="springtutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-tutorial" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="build&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;Beans&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/src/main/resources/Beans.xml&#10;gradle&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;Beans.xml&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/src/main/resources/Beans.xml&#10;gra&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;gradl&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;Clas&#9;FILE&#9;jar:///home/flysall/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.14.RELEASE/63fd73134126b6ae088666fb720f5437bcb39cfa/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java&#10;ClassPa&#9;FILE&#9;uml://JAVA/org.springframework.context.support.ClassPathXmlApplicationContext&#10;LinkedList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;LinkedHash&#9;PSI&#9;JAVA://java.util.LinkedHashMap&#10;ClassPathXml&#9;PSI&#9;JAVA://org.springframework.context.support.ClassPathXmlApplicationContext&#10;Context&#9;FILE&#9;jar:///home/flysall/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.14.RELEASE/63fd73134126b6ae088666fb720f5437bcb39cfa/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/context/ApplicationContext.java" />
+    <property name="SearchEverywhereHistoryKey" value="RootBeanDefinition&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.RootBeanDefinition&#10;DefaultListable&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.DefaultListableBeanFactory&#10;build&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;Beans&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/src/main/resources/Beans.xml&#10;gradle&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;Beans.xml&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/src/main/resources/Beans.xml&#10;gra&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;gradl&#9;FILE&#9;file:///home/flysall/d/code/Java/spring/spring-tutorial/build.gradle&#10;Clas&#9;FILE&#9;jar:///home/flysall/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.14.RELEASE/63fd73134126b6ae088666fb720f5437bcb39cfa/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java&#10;ClassPa&#9;FILE&#9;uml://JAVA/org.springframework.context.support.ClassPathXmlApplicationContext&#10;LinkedList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;LinkedHash&#9;PSI&#9;JAVA://java.util.LinkedHashMap&#10;ClassPathXml&#9;PSI&#9;JAVA://org.springframework.context.support.ClassPathXmlApplicationContext&#10;Context&#9;FILE&#9;jar:///home/flysall/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.14.RELEASE/63fd73134126b6ae088666fb720f5437bcb39cfa/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/context/ApplicationContext.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -844,39 +717,41 @@
       <workItem from="1526961920992" duration="8992000" />
       <workItem from="1526998802567" duration="2272000" />
       <workItem from="1527050675409" duration="5641000" />
+      <workItem from="1527075951541" duration="2264000" />
+      <workItem from="1527121609223" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47637000" />
+    <option name="totallyTimeSpent" value="49909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="1" sideWeight="0.47942388" weight="0.32960477" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32947975" />
       <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49588478" weight="0.32917705" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.47522935" />
-      <window_info anchor="bottom" id="Spring" order="11" weight="0.38715595" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2630058" />
-      <window_info id="Designer" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="1" sideWeight="0.47942388" weight="0.32960477" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.27889907" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.4508816" />
-      <window_info anchor="right" id="Structure" order="3" weight="0.40641314" />
+      <window_info anchor="right" id="Structure" order="3" side_tool="true" weight="0.40641314" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.38715595" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2630058" />
       <window_info anchor="right" id="Favorites" order="9" side_tool="true" weight="0.45683452" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.22543353" />
       <window_info active="true" anchor="bottom" id="Dependency Viewer" order="13" visible="true" weight="0.5736994" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.47522935" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32921812" />
       <window_info anchor="right" x="0" y="0" width="291" height="544" id="Documentation" order="8" side_tool="true" weight="0.29679343" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.22543353" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.27889907" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32844037" />
     </layout>
@@ -993,62 +868,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/local/java/jdk1.8.0_151/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="160" column="15" lean-forward="true" selection-start-line="160" selection-start-column="15" selection-end-line="160" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.LinkedList">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.LinkedList</OriginalElement>
-          <nodes>
-            <node x="" y="">java.util.AbstractCollection</node>
-            <node x="" y="">java.util.List</node>
-            <node x="" y="">java.lang.Cloneable</node>
-            <node x="" y="">java.util.Collection</node>
-            <node x="" y="">java.util.AbstractList</node>
-            <node x="" y="">java.util.Queue</node>
-            <node x="" y="">java.util.LinkedList</node>
-            <node x="" y="">java.util.Deque</node>
-            <node x="" y="">java.util.AbstractSequentialList</node>
-            <node x="" y="">java.lang.Iterable</node>
-            <node x="" y="">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="316.0" y="350.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_151/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/BeanLifeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/CollectionDemoApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/ChildBeanDemoApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1871,26 +1690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="1144">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1908,27 +1709,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="132">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1954,7 +1740,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="110.5" y="182.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="111.0" y="183.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -2012,34 +1798,22 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="463.6893939393942" y="189.33333333333337" />
+          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="464.0" y="189.0" />
           <SelectedNodes />
           <Categories>
             <Category>Local context</Category>
             <Category>Properties</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="176">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2051,13 +1825,264 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JAVA/org.springframework.beans.factory.xml.XmlBeanDefinitionReader">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.beans.factory.xml.XmlBeanDefinitionReader</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</node>
+            <node x="" y="">org.springframework.beans.factory.support.BeanDefinitionReader</node>
+            <node x="" y="">org.springframework.core.env.EnvironmentCapable</node>
+            <node x="" y="">org.springframework.beans.factory.support.AbstractBeanDefinitionReader</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="210.0" y="100.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.beans.factory.support.DefaultListableBeanFactory">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.beans.factory.support.DefaultListableBeanFactory</OriginalElement>
+          <nodes>
+            <node x="358.9629629629629" y="166.0">org.springframework.beans.factory.HierarchicalBeanFactory</node>
+            <node x="854.2129629629628" y="83.0">org.springframework.core.SimpleAliasRegistry</node>
+            <node x="750.2129629629628" y="166.0">org.springframework.beans.factory.support.DefaultSingletonBeanRegistry</node>
+            <node x="542.0514524542218" y="85.16460420349637">org.springframework.beans.factory.config.SingletonBeanRegistry</node>
+            <node x="0.0" y="415.0">java.lang.SuppressWarnings</node>
+            <node x="389.33333333333337" y="332.0">org.springframework.beans.factory.config.AutowireCapableBeanFactory</node>
+            <node x="1074.2129629629628" y="83.0">org.springframework.beans.factory.support.BeanDefinitionRegistry</node>
+            <node x="196.0" y="415.0">org.springframework.beans.factory.config.ConfigurableListableBeanFactory</node>
+            <node x="758.2129629629628" y="249.0">org.springframework.beans.factory.support.FactoryBeanRegistrySupport</node>
+            <node x="1196.7129629629628" y="415.0">java.io.Serializable</node>
+            <node x="575.3253086419754" y="415.0">org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory</node>
+            <node x="1007.8333333333335" y="0.0">org.springframework.core.AliasRegistry</node>
+            <node x="715.3253086419754" y="332.0">org.springframework.beans.factory.support.AbstractBeanFactory</node>
+            <node x="311.58333333333337" y="83.0">org.springframework.beans.factory.BeanFactory</node>
+            <node x="616.2129629629628" y="498.0">org.springframework.beans.factory.support.DefaultListableBeanFactory</node>
+            <node x="424.0753086419754" y="249.0">org.springframework.beans.factory.config.ConfigurableBeanFactory</node>
+            <node x="86.38765432098751" y="166.0">org.springframework.beans.factory.ListableBeanFactory</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.core.SimpleAliasRegistry" target="org.springframework.core.AliasRegistry">
+              <point x="0.0" y="-16.5" />
+              <point x="954.2129629629628" y="58.0" />
+              <point x="1045.8333333333335" y="58.0" />
+              <point x="-38.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.HierarchicalBeanFactory" target="org.springframework.beans.factory.BeanFactory">
+              <point x="0.0" y="-16.5" />
+              <point x="474.9629629629629" y="141.0" />
+              <point x="424.91666666666674" y="141.0" />
+              <point x="45.33333333333337" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultListableBeanFactory" target="java.lang.SuppressWarnings">
+              <point x="-102.39999999999998" y="-16.5" />
+              <point x="641.812962962963" y="478.0" />
+              <point x="88.0" y="478.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory" target="org.springframework.beans.factory.config.AutowireCapableBeanFactory">
+              <point x="-80.0" y="-16.5" />
+              <point x="655.3253086419754" y="390.0" />
+              <point x="581.3333333333334" y="390.0" />
+              <point x="64.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.config.AutowireCapableBeanFactory" target="org.springframework.beans.factory.BeanFactory">
+              <point x="0.0" y="-16.5" />
+              <point x="517.3333333333334" y="302.0" />
+              <point x="348.4629629629629" y="302.0" />
+              <point x="348.4629629629629" y="141.0" />
+              <point x="379.58333333333337" y="141.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.config.ConfigurableListableBeanFactory" target="org.springframework.beans.factory.config.AutowireCapableBeanFactory">
+              <point x="98.66666666666669" y="-16.5" />
+              <point x="442.6666666666667" y="390.0" />
+              <point x="453.33333333333337" y="390.0" />
+              <point x="-64.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.FactoryBeanRegistrySupport" target="org.springframework.beans.factory.support.DefaultSingletonBeanRegistry">
+              <point x="0.0" y="-16.5" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultSingletonBeanRegistry" target="org.springframework.core.SimpleAliasRegistry">
+              <point x="68.0" y="-16.5" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.config.ConfigurableListableBeanFactory" target="org.springframework.beans.factory.ListableBeanFactory">
+              <point x="-98.66666666666669" y="-16.5" />
+              <point x="245.33333333333331" y="390.0" />
+              <point x="186.3876543209875" y="390.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.ListableBeanFactory" target="org.springframework.beans.factory.BeanFactory">
+              <point x="0.0" y="-16.5" />
+              <point x="186.3876543209875" y="141.0" />
+              <point x="334.25" y="141.0" />
+              <point x="-45.33333333333334" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.config.ConfigurableBeanFactory" target="org.springframework.beans.factory.config.SingletonBeanRegistry">
+              <point x="58.0" y="-16.5" />
+              <point x="598.0753086419754" y="224.0" />
+              <point x="601.4629629629628" y="224.0" />
+              <point x="-54.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.config.ConfigurableListableBeanFactory" target="org.springframework.beans.factory.config.ConfigurableBeanFactory">
+              <point x="0.0" y="-16.5" />
+              <point x="344.0" y="390.0" />
+              <point x="342.4629629629629" y="390.0" />
+              <point x="342.4629629629629" y="312.0" />
+              <point x="482.0753086419754" y="312.0" />
+              <point x="-58.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.BeanDefinitionRegistry" target="org.springframework.core.AliasRegistry">
+              <point x="0.0" y="-16.5" />
+              <point x="1186.2129629629628" y="58.0" />
+              <point x="1121.8333333333335" y="58.0" />
+              <point x="37.999999999999886" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultSingletonBeanRegistry" target="org.springframework.beans.factory.config.SingletonBeanRegistry">
+              <point x="-68.0" y="-16.5" />
+              <point x="818.2129629629628" y="141.0" />
+              <point x="709.4629629629628" y="141.0" />
+              <point x="54.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.AbstractBeanFactory" target="org.springframework.beans.factory.support.FactoryBeanRegistrySupport">
+              <point x="50.0" y="-16.5" />
+              <point x="865.3253086419754" y="312.0" />
+              <point x="886.2129629629628" y="312.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory" target="org.springframework.beans.factory.support.AbstractBeanFactory">
+              <point x="80.0" y="-16.5" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultListableBeanFactory" target="org.springframework.beans.factory.config.ConfigurableListableBeanFactory">
+              <point x="-51.200000000000045" y="-16.5" />
+              <point x="693.0129629629628" y="468.0" />
+              <point x="344.0" y="468.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultListableBeanFactory" target="java.io.Serializable">
+              <point x="102.40000000000009" y="-16.5" />
+              <point x="846.6129629629629" y="478.0" />
+              <point x="1268.7129629629628" y="478.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.AbstractBeanFactory" target="org.springframework.beans.factory.config.ConfigurableBeanFactory">
+              <point x="-50.0" y="-16.5" />
+              <point x="765.3253086419754" y="312.0" />
+              <point x="598.0753086419754" y="312.0" />
+              <point x="58.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultListableBeanFactory" target="org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory">
+              <point x="0.0" y="-16.5" />
+              <point x="744.2129629629628" y="478.0" />
+              <point x="735.3253086419754" y="478.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.config.ConfigurableBeanFactory" target="org.springframework.beans.factory.HierarchicalBeanFactory">
+              <point x="-58.0" y="-16.5" />
+              <point x="482.0753086419754" y="224.0" />
+              <point x="474.9629629629629" y="224.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="org.springframework.beans.factory.support.DefaultListableBeanFactory" target="org.springframework.beans.factory.support.BeanDefinitionRegistry">
+              <point x="51.200000000000045" y="-16.5" />
+              <point x="795.4129629629629" y="468.0" />
+              <point x="1186.2129629629628" y="468.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.923956442831216" x="206.0" y="240.0" />
+          <SelectedNodes>
+            <node>org.springframework.core.SimpleAliasRegistry</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="1712" lean-forward="true" selection-start-line="1712" selection-end-line="1712" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.beans.factory.support.RootBeanDefinition">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.beans.factory.support.RootBeanDefinition</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.beans.factory.support.RootBeanDefinition</node>
+            <node x="" y="">org.springframework.beans.BeanMetadataElement</node>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">org.springframework.core.AttributeAccessor</node>
+            <node x="" y="">org.springframework.core.AttributeAccessorSupport</node>
+            <node x="" y="">org.springframework.beans.BeanMetadataAttributeAccessor</node>
+            <node x="" y="">java.lang.SuppressWarnings</node>
+            <node x="" y="">org.springframework.beans.factory.config.BeanDefinition</node>
+            <node x="" y="">org.springframework.beans.factory.support.AbstractBeanDefinition</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="305.0" y="183.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/RootBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="66">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#73#102#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flysall/springtutorial/core/EmployeeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
           </folding>
         </state>
       </provider>

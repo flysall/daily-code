@@ -1,14 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"net"
+	"fmt"
+)
 
 func main() {
-	nums := make([]int64, 12)
-	fmt.Println(nums)
-	modslice(nums)
-	fmt.Println(nums)
-}
-
-func modslice(src []int64) {
-	src[0] = 1
+	laddr, _ := net.ResolveIPAddr("ip", "192.168,1.1")
+	raddr, _ := net.ResolveIPAddr("ip", "192.168.1.0")
+	ipConn, _ := net.DialIP("ip", laddr, raddr)
+	fmt.Println(ipConn)
 }

@@ -1,8 +1,15 @@
 JVM/
 json/
+java-projects/
+
+out/
+
+# Gradle
+.gradle/
+build/
 
 # Compiled class by maven
-target/
+/target/
 
 # Compiled class file
 *.class
