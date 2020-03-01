@@ -1,6 +1,14 @@
+# private project
 Java-SE
 Java/EE/
 OJ/
 文档/
 bash/
+
+# IDEA
+.idea/
+fifty-sqls-mybatis.iml
+
+# maven
+target/
 
