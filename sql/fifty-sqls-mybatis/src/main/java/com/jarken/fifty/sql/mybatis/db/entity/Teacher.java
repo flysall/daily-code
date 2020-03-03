@@ -1,4 +1,4 @@
-package com.jarken.sql.mybatis.db.entity;
+package com.jarken.fifty.sql.mybatis.db.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

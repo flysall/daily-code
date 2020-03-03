@@ -1,6 +1,6 @@
-package com.jarken.sql.mybatis.db.mapper;
+package com.jarken.fifty.sql.mybatis.db.mapper;
 
-import com.jarken.sql.mybatis.db.entity.map.CourseAndTeacher;
+import com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -30,9 +30,11 @@ public class FiftySqlMapperTest {
     public void testSelectCourseAndTeacher() {
         try (SqlSession session = sessionFactory.openSession()) {
             FiftySqlMapper mapper = session.getMapper(FiftySqlMapper.class);
-            List<CourseAndTeacher> courseAndTeachers = mapper.selectCourseAndTeacher();
-            System.out.println(">>> courseAndTeachers are:");
-            System.out.println(courseAndTeachers);
+            List<CourseJoinTeacher> courseJoinTeachers = mapper.selectCourseAndTeacher();
+            System.out.println(">>> courseJoinTeachers are:");
+            for (CourseJoinTeacher column : courseJoinTeachers) {
+                System.out.println(column);
+            }
         }
     }
 }
