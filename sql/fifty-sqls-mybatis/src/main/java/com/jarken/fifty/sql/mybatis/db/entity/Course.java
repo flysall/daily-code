@@ -11,7 +11,7 @@ public class Course {
 
     private String cId;
 
-    private String CName;
+    private String cName;
 
     private String tId;
 }
