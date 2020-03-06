@@ -8,7 +8,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.jarken.sql.mybatis.db.entity"/>
+        <package name="com.jarken.fifty.sql.mybatis.db.entity"/>
     </typeAliases>
 
     <environments default="dev">
@@ -24,6 +24,6 @@
     </environments>
 
     <mappers>
-        <package name="com.jarken.sql.mybatis.db.mapper.join"/>
+        <package name="com.jarken.fifty.sql.mybatis.db.mapper.join"/>
     </mappers>
 </configuration>

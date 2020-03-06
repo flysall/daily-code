@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * 包含一对一，一对多，多对多查询
+ * @author flysall
  */
 public interface AssociationQueryMapper {
 
