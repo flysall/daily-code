@@ -24,6 +24,6 @@
     </environments>
 
     <mappers>
-        <package name="com.jarken.sql.mybatis.db.mapper"/>
+        <package name="com.jarken.sql.mybatis.db.mapper.join"/>
     </mappers>
 </configuration>
