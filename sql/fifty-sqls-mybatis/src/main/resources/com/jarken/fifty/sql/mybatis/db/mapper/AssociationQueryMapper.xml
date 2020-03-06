@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jarken.fifty.sql.mybatis.db.mapper.join.AssociationQueryMapper">
+    <resultMap id="courseJoinTeacherResult" type="com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher">
+        <result property="cId" column="c_id"/>
+        <result property="cName" column="c_name"/>
+        <association property="teacher" column="t_id" javaType="com.jarken.fifty.sql.mybatis.db.entity.Teacher" resultMap="teacherResult"/>
+    </resultMap>
+    
+    <resultMap id="teacherResult" type="com.jarken.fifty.sql.mybatis.db.entity.Teacher">
+        <result property="tId" column="t_id"/>
+        <result property="tName" column="t_name"/>
+    </resultMap>
+
+    <select id="selectCourseAndTeacher"
+            resultMap="courseJoinTeacherResult"
+            resultType="list">
+        select c.c_id, c.c_name, t.t_id, t.t_name
+        from course c left join teacher t
+        on c.t_id = t.t_id
+    </select>
+
+    <!-- 学生与课程的多对多查询，可以看做student有多个score，用collectioin；每个score有一个course，再用associate。-->
+    <resultMap id="studentJoinCourseResult" type="com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse">
+        <result property="sId" column="s_id"/>
+        <result property="sName" column="s_name"/>
+        <result property="sBirth" column="s_birth"/>
+        <result property="sSex" column="s_sex"/>
+        <collection property="scores" ofType="com.jarken.fifty.sql.mybatis.db.entity.join.Score">
+            <!-- score表中的s_id和c_id这2个字段分别用来关联student, course表，不需要再写到score的resultMap中 -->
+            <result property="sScore" column="s_score"/>
+            <association property="course" column="c_id" javaType="com.jarken.fifty.sql.mybatis.db.entity.Course" resultMap="courseResult"/>
+        </collection>
+    </resultMap>
+    
+    <resultMap id="courseResult" type="com.jarken.fifty.sql.mybatis.db.entity.Course">
+        <result property="cId" column="c_id"/>
+        <result property="cName" column="c_name"/>
+        <result property="tId" column="t_id"/>
+    </resultMap>
+    
+    <select id="selectStudentAndCourse"
+            resultMap="studentJoinCourseResult"
+            resultType="list">
+        select a.s_id, a.s_name, a.s_birth, a.s_sex,
+        b.s_score,
+        c.c_id, c.c_name, c.t_id
+        from student a
+        left join score b on a.s_id = b.s_id
+        left join course c on b.c_id = c.c_id
+    </select>
+</mapper>

@@ -1,6 +1,8 @@
 package com.jarken.fifty.sql.mybatis.db.mapper;
 
 import com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher;
+import com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse;
+import com.jarken.fifty.sql.mybatis.db.mapper.join.AssociationQueryMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -10,7 +12,7 @@ import org.junit.Test;
 import java.io.InputStream;
 import java.util.List;
 
-public class FiftySqlMapperTest {
+public class AssociationQueryMapperTest {
 
     private static final String MYBATIS_CONFIGURATION_PATH = "/mybatis-config.xml";
 
@@ -29,11 +31,23 @@ public class FiftySqlMapperTest {
     @Test
     public void testSelectCourseAndTeacher() {
         try (SqlSession session = sessionFactory.openSession()) {
-            FiftySqlMapper mapper = session.getMapper(FiftySqlMapper.class);
+            AssociationQueryMapper mapper = session.getMapper(AssociationQueryMapper.class);
             List<CourseJoinTeacher> courseJoinTeachers = mapper.selectCourseAndTeacher();
             System.out.println(">>> courseJoinTeachers are:");
             for (CourseJoinTeacher column : courseJoinTeachers) {
                 System.out.println(column);
+            }
+        }
+    }
+
+    @Test
+    public void testSelectStudentAndCourse() {
+        try (SqlSession session = sessionFactory.openSession()) {
+            AssociationQueryMapper mapper = session.getMapper(AssociationQueryMapper.class);
+            List<StudentJoinCourse> studentJoinCourses = mapper.selectStudentAndCourse();
+            System.out.println(">>> studentJoinCourse are:");
+            for (StudentJoinCourse studentJoinCourse : studentJoinCourses) {
+                System.out.println(studentJoinCourse);
             }
         }
     }
