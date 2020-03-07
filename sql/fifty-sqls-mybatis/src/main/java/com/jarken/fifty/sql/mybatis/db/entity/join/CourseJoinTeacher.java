@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 留意与{@link com.jarken.fifty.sql.mybatis.db.entity.Course}这个类的区别
+ * @author flysall
  */
 @Data
 @NoArgsConstructor

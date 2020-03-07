@@ -10,11 +10,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Course {
+public class Grade {
 
-    private String cId;
+    private Long gId;
 
-    private String cName;
-
-    private String tId;
+    private String gName;
 }

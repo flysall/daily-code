@@ -34,6 +34,22 @@ CREATE TABLE `score`(
     PRIMARY KEY(`s_id`, `c_id`)
 ) DEFAULT CHARSET = utf8;
 
+-- 年级表
+CREATE TABLE `grade`(
+    `g_id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+    `g_name` VARCHAR(20) NOT NULL DEFAULT '',
+    PRIMARY KEY (`g_id`)
+) AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- 班级表
+CREATE TABLE `class`(
+    `c_id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+    `c_name` VARCHAR(20) NOT NULL DEFAULT '',
+    `g_id` INT(20) NOT NULL DEFAULT 0,
+    PRIMARY KEY (`c_id`)
+) AUTO_INCREMENT=1 DEFAULT CHARSET = utf8;
+
+
 -- 插入学生表测试数据
 INSERT INTO student VALUES('01' , '赵雷' , '1990-01-01' , '男');
 INSERT INTO student VALUES('02' , '钱电' , '1990-12-21' , '男');
@@ -73,3 +89,14 @@ insert into score values('06' , '01' , 31);
 insert into score values('06' , '03' , 34);
 insert into score values('07' , '02' , 89);
 insert into score values('07' , '03' , 98);
+
+-- 年级测试表
+insert into grade(g_name) values('12级');
+insert into grade(g_name) values('15级');
+insert into grade(g_name) values('16级');
+
+-- 班级表测试数据
+insert into class (c_name, g_id) values('1206', 1);
+insert into class(c_name, g_id) values('1207', 1);
+insert into class(c_name, g_id) values('1501', 2);
+insert into class(c_name, g_id) values('1503', 2);
