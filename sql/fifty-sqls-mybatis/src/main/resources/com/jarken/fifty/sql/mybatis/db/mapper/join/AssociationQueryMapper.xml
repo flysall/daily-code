@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jarken.fifty.sql.mybatis.db.mapper.join.AssociationQueryMapper">
-    <resultMap id="courseJoinTeacherResult" type="com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher">
+
+    <!-- 课程与老师的一对一查询 -->
+    <resultMap id="courseJoinTeacherResult" type="CourseJoinTeacher">
         <result property="cId" column="c_id"/>
         <result property="cName" column="c_name"/>
-        <association property="teacher" column="t_id" javaType="com.jarken.fifty.sql.mybatis.db.entity.Teacher" resultMap="teacherResult"/>
+        <association property="teacher" column="t_id" javaType="Teacher" resultMap="teacherResult"/>
     </resultMap>
     
-    <resultMap id="teacherResult" type="com.jarken.fifty.sql.mybatis.db.entity.Teacher">
+    <resultMap id="teacherResult" type="Teacher">
         <result property="tId" column="t_id"/>
         <result property="tName" column="t_name"/>
     </resultMap>
@@ -20,20 +22,43 @@
         on c.t_id = t.t_id
     </select>
 
+
+    <!-- 年级与班级的一对多查询 -->
+    <resultMap id="gradeJoinClassResult" type="GradeJoinClass">
+        <id property="gId" column="g_id"/>
+        <result property="gName" column="g_name"/>
+        <collection property="classes" ofType="Class" resultMap="classResult"/>
+    </resultMap>
+
+    <resultMap id="classResult" type="Class">
+        <id property="cId" column="c_id"/>
+        <result property="cName" column="c_name"/>
+    </resultMap>
+
+    <select id="selectGradeAndClass"
+            resultMap="gradeJoinClassResult"
+            resultType="list">
+        select c.c_id, c.c_name, g.g_id, g.g_name
+        from class c
+        left join grade g
+        on g.g_id = c.g_id
+    </select>
+
+
     <!-- 学生与课程的多对多查询，可以看做student有多个score，用collectioin；每个score有一个course，再用associate。-->
-    <resultMap id="studentJoinCourseResult" type="com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse">
+    <resultMap id="studentJoinCourseResult" type="StudentJoinCourse">
         <result property="sId" column="s_id"/>
         <result property="sName" column="s_name"/>
         <result property="sBirth" column="s_birth"/>
         <result property="sSex" column="s_sex"/>
-        <collection property="scores" ofType="com.jarken.fifty.sql.mybatis.db.entity.join.Score">
+        <collection property="scores" ofType="Score">
             <!-- score表中的s_id和c_id这2个字段分别用来关联student, course表，不需要再写到score的resultMap中 -->
             <result property="sScore" column="s_score"/>
-            <association property="course" column="c_id" javaType="com.jarken.fifty.sql.mybatis.db.entity.Course" resultMap="courseResult"/>
+            <association property="course" column="c_id" javaType="Course" resultMap="courseResult"/>
         </collection>
     </resultMap>
     
-    <resultMap id="courseResult" type="com.jarken.fifty.sql.mybatis.db.entity.Course">
+    <resultMap id="courseResult" type="Course">
         <result property="cId" column="c_id"/>
         <result property="cName" column="c_name"/>
         <result property="tId" column="t_id"/>
