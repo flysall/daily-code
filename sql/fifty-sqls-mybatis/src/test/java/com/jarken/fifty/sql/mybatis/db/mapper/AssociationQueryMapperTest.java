@@ -46,6 +46,7 @@ public class AssociationQueryMapperTest {
         try (SqlSession session = sessionFactory.openSession()) {
             AssociationQueryMapper mapper = session.getMapper(AssociationQueryMapper.class);
             List<GradeJoinClass> gradeJoinClasses = mapper.selectGradeAndClass();
+            System.out.println(">>> gradeJoinClasses are:");
             for (GradeJoinClass gradeJoinClass : gradeJoinClasses) {
                 System.out.println(gradeJoinClass);
             }
