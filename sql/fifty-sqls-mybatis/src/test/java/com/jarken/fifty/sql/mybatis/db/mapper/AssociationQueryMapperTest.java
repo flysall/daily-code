@@ -1,6 +1,7 @@
 package com.jarken.fifty.sql.mybatis.db.mapper;
 
 import com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher;
+import com.jarken.fifty.sql.mybatis.db.entity.join.GradeJoinClass;
 import com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse;
 import com.jarken.fifty.sql.mybatis.db.mapper.join.AssociationQueryMapper;
 import org.apache.ibatis.session.SqlSession;
@@ -36,6 +37,18 @@ public class AssociationQueryMapperTest {
             System.out.println(">>> courseJoinTeachers are:");
             for (CourseJoinTeacher column : courseJoinTeachers) {
                 System.out.println(column);
+            }
+        }
+    }
+
+    @Test
+    public void testSelectGradeAndCourse() {
+        try (SqlSession session = sessionFactory.openSession()) {
+            AssociationQueryMapper mapper = session.getMapper(AssociationQueryMapper.class);
+            List<GradeJoinClass> gradeJoinClasses = mapper.selectGradeAndClass();
+            System.out.println(">>> gradeJoinClasses are:");
+            for (GradeJoinClass gradeJoinClass : gradeJoinClasses) {
+                System.out.println(gradeJoinClass);
             }
         }
     }

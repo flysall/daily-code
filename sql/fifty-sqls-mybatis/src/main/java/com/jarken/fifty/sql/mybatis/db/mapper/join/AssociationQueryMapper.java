@@ -1,6 +1,7 @@
 package com.jarken.fifty.sql.mybatis.db.mapper.join;
 
 import com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher;
+import com.jarken.fifty.sql.mybatis.db.entity.join.GradeJoinClass;
 import com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse;
 
 import java.util.List;
@@ -15,6 +16,11 @@ public interface AssociationQueryMapper {
      * 一对一, 关联查询课程及老师
      */
     List<CourseJoinTeacher> selectCourseAndTeacher();
+
+    /**
+     * 一对多，关联查询年级与班级
+     */
+    List<GradeJoinClass> selectGradeAndClass();
 
     /**
      * 多对多，student与course表构成多对多关系，通过score表进行关联。
