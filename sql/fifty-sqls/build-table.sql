@@ -98,5 +98,5 @@ insert into grade(g_name) values('16级');
 -- 班级表测试数据
 insert into class (c_name, g_id) values('1206', 1);
 insert into class(c_name, g_id) values('1207', 1);
-insert into class(c_name, g_id) values('1501', 2);
-insert into class(c_name, g_id) values('1503', 2);
+insert into class(c_name, g_id) values('1501', 3);
+insert into class(c_name, g_id) values('1503', 3);
