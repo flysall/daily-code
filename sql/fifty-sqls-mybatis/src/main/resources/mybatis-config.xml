@@ -30,7 +30,7 @@
     </environments>
 
     <mappers>
-        <package name="com.jarken.fifty.sql.mybatis.db.mapper.join"/>
+        <package name="com.jarken.fifty.sql.mybatis.db.mapper.enhanced"/>
     </mappers>
 
 </configuration>

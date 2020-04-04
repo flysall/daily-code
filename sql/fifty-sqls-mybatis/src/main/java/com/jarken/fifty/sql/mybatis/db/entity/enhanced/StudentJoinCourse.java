@@ -1,4 +1,4 @@
-package com.jarken.fifty.sql.mybatis.db.entity.join;
+package com.jarken.fifty.sql.mybatis.db.entity.enhanced;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

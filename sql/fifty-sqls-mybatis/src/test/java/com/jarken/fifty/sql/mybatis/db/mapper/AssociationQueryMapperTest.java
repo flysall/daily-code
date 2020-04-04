@@ -2,10 +2,10 @@ package com.jarken.fifty.sql.mybatis.db.mapper;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher;
-import com.jarken.fifty.sql.mybatis.db.entity.join.GradeJoinClass;
-import com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse;
-import com.jarken.fifty.sql.mybatis.db.mapper.join.AssociationQueryMapper;
+import com.jarken.fifty.sql.mybatis.db.entity.enhanced.CourseJoinTeacher;
+import com.jarken.fifty.sql.mybatis.db.entity.enhanced.GradeJoinClass;
+import com.jarken.fifty.sql.mybatis.db.entity.enhanced.StudentJoinCourse;
+import com.jarken.fifty.sql.mybatis.db.mapper.enhanced.AssociationQueryMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
