@@ -1,8 +1,8 @@
-package com.jarken.fifty.sql.mybatis.db.mapper.join;
+package com.jarken.fifty.sql.mybatis.db.mapper.enhanced;
 
-import com.jarken.fifty.sql.mybatis.db.entity.join.CourseJoinTeacher;
-import com.jarken.fifty.sql.mybatis.db.entity.join.GradeJoinClass;
-import com.jarken.fifty.sql.mybatis.db.entity.join.StudentJoinCourse;
+import com.jarken.fifty.sql.mybatis.db.entity.enhanced.CourseJoinTeacher;
+import com.jarken.fifty.sql.mybatis.db.entity.enhanced.GradeJoinClass;
+import com.jarken.fifty.sql.mybatis.db.entity.enhanced.StudentJoinCourse;
 
 import java.util.List;
 

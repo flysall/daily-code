@@ -11,6 +11,12 @@
         <package name="com.jarken.fifty.sql.mybatis.db.entity"/>
     </typeAliases>
 
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <property name="rowBoundsWithCount" value="true"/>
+        </plugin>
+    </plugins>
+
     <environments default="dev">
         <environment id="dev">
             <transactionManager type="JDBC"/>
@@ -24,6 +30,7 @@
     </environments>
 
     <mappers>
-        <package name="com.jarken.fifty.sql.mybatis.db.mapper.join"/>
+        <package name="com.jarken.fifty.sql.mybatis.db.mapper.enhanced"/>
     </mappers>
+
 </configuration>
